@@ -1,1 +1,131 @@
-<p>set-pin works!</p>
+<div class="block d-flex flex-column">
+  <div class="pin-title">
+    <p class="text-center"><strong>Thiết lập PIN</strong></p>
+  </div>
+  <div class="set-pin">
+    <div class="pin-icon d-flex justify-content-center">
+      <img src="../../../assets/lock.png" alt="lock" />
+    </div>
+    <div class="pin-info">
+      <p class="text-center mb-2">Số thẻ</p>
+      <p class="text-center">
+        <strong>{{ showCarsNumber }}</strong>
+      </p>
+
+      <div class="new-pin">
+        <p class="text-center mb-2 mt-5"><strong>Nhập mã PIN mới</strong></p>
+        <div class="d-flex justify-content-center">
+          <input
+            type="password"
+            maxlength="1"
+            class="input-pin"
+            id="char0"
+            [(ngModel)]="pin[0]"
+            (ngModelChange)="onInputChange(0)"
+            (ngModelChange)="match(0)"
+          />
+          <input
+            type="password"
+            maxlength="1"
+            class="input-pin"
+            id="char1"
+            [(ngModel)]="pin[1]"
+            (ngModelChange)="onInputChange(1)"
+            (ngModelChange)="match(1)"
+          />
+          <input
+            type="password"
+            maxlength="1"
+            class="input-pin"
+            id="char2"
+            [(ngModel)]="pin[2]"
+            (ngModelChange)="onInputChange(2)"
+            (ngModelChange)="match(2)"
+          />
+          <input
+            type="password"
+            maxlength="1"
+            class="input-pin"
+            id="char3"
+            [(ngModel)]="pin[3]"
+            (ngModelChange)="onInputChange(3)"
+            (ngModelChange)="match(3)"
+          />
+          <input
+            type="password"
+            maxlength="1"
+            class="input-pin"
+            id="char4"
+            [(ngModel)]="pin[4]"
+            (ngModelChange)="onInputChange(4)"
+            (ngModelChange)="match(4)"
+          />
+          <input
+            type="password"
+            maxlength="1"
+            class="input-pin"
+            id="char5"
+            [(ngModel)]="pin[5]"
+            (ngModelChange)="onInputChange(5)"
+            (ngModelChange)="match(5)"
+          />
+        </div>
+      </div>
+
+      <div class="re-pin">
+        <p class="text-center mb-2 mt-5"><strong>Nhập mã PIN mới</strong></p>
+        <div class="d-flex justify-content-center">
+          <input
+            type="password"
+            maxlength="1"
+            class="input-pin"
+            id="rchar0"
+            [(ngModel)]="re_pin[0]"
+            (ngModelChange)="match(0)"
+          />
+          <input
+            type="password"
+            maxlength="1"
+            class="input-pin"
+            id="rchar1"
+            [(ngModel)]="re_pin[1]"
+            (ngModelChange)="match(1)"
+          />
+          <input
+            type="password"
+            maxlength="1"
+            class="input-pin"
+            id="rchar2"
+            [(ngModel)]="re_pin[2]"
+            (ngModelChange)="match(2)"
+          />
+          <input
+            type="password"
+            maxlength="1"
+            class="input-pin"
+            id="rchar3"
+            [(ngModel)]="re_pin[3]"
+            (ngModelChange)="match(3)"
+          />
+          <input
+            type="password"
+            maxlength="1"
+            class="input-pin"
+            id="rchar4"
+            [(ngModel)]="re_pin[4]"
+            (ngModelChange)="match(4)"
+          />
+          <input
+            type="password"
+            maxlength="1"
+            class="input-pin"
+            id="rchar5"
+            [(ngModel)]="re_pin[5]"
+            (ngModelChange)="match(5)"
+          />
+        </div>
+      </div>
+      <p class="text-center small text-danger">{{alert}}</p>
+    </div>
+  </div>
+</div>

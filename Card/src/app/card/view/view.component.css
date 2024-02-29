@@ -115,3 +115,7 @@
     font-weight: bold;
     color: rgb(14, 14, 205);
 }
+
+.alert-body a{
+    text-decoration: none;
+}
